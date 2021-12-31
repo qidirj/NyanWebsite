@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>404[Not Found] - Nyan Studio</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="index.js" defer></script>
+    <style type="text/css"></style>
+    <script src="phaser.min.js"></script>
+    <script src="catch-the-cat.js"></script>
+    <!--<link rel="icon" href="./logo.ico" />-->
+</head>
+
+<body>
+    <h1 class="studioname"><a href="./index.html"><strong>Nyan Studio</strong></a> / Error Page / 404</h1>
+    <div class="discryption">
+        <p><strong class="big-strong">404 - 页面未找到</strong></p>
+        <p><strong class="strong">可能出现了以下问题：</strong></p>
+        <ul>
+            <li>您输入了错误的网址(URL)。</li>
+            <li>您点击了一个无效的链接。</li>
+            <li>网站跳转出错。</li>
+        </ul>
+        <p><strong class="strong">请您尝试使用浏览器的“返回”按钮，退回上一个界面。</strong></p>
+        <p><strong class="strong">如果问题仍未解决，请您联系开发者 <a href="https://www.luogu.com.cn/user/371468">qidirj</a>。</strong></p>
+        <p><strong class="big-strong">在等待的时间里，玩玩《抓猫》这个经典游戏吧！</strong></p>
+        <p><a href="https://github.com/ganlvtech/phaser-catch-the-cat">抓猫引擎 by ganlvtech</a></p>
+        <script>
+            window.game1 = new CatchTheCatGame({
+                w: 21,
+                h: 21,
+                r: 9.6,
+                backgroundColor: 0x66ccff,
+                parent: '抓猫',
+                statusBarAlign: 'center',
+                credit: '新手模式 | 21x21'
+            });
+        </script>
+        <script>
+            window.game2 = new CatchTheCatGame({
+                w: 16,
+                h: 16,
+                r: 12,
+                backgroundColor: 0x66ffcc,
+                parent: '抓猫',
+                statusBarAlign: 'center',
+                credit: '简单模式 | 16x16'
+            });
+        </script>
+        <script>
+            window.game3 = new CatchTheCatGame({
+                w: 13,
+                h: 13,
+                r: 14.2,
+                backgroundColor: 0xccff66,
+                parent: '抓猫',
+                statusBarAlign: 'center',
+                credit: '普通模式 | 13x13'
+            });
+        </script>
+        <script>
+            window.game4 = new CatchTheCatGame({
+                w: 11,
+                h: 11,
+                r: 16.1,
+                backgroundColor: 0xffcc66,
+                parent: '抓猫',
+                statusBarAlign: 'center',
+                credit: '困难模式 | 11x11'
+            });
+        </script>
+        <script>
+            window.game5 = new CatchTheCatGame({
+                w: 9,
+                h: 9,
+                r: 18.7,
+                backgroundColor: 0xff66cc,
+                parent: '抓猫',
+                statusBarAlign: 'center',
+                credit: '极限模式 | 9x9'
+            });
+        </script>
+    </div>
+</body>
+
+</html>

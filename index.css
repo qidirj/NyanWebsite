@@ -1,0 +1,256 @@
+@font-face {
+    font-family: ChFont;
+    src: url(msyh.ttc);
+    /*Supported: Chinese*/
+}
+
+@font-face {
+    font-family: EnFont;
+    src: url(LSANS.TTF);
+    /*Supported: English*/
+}
+
+h1 {
+    font-size: 40px;
+    font-family: EnFont, ChFont;
+    text-align: center;
+    text-shadow: 5px 5px 5px #FF0000;
+    animation-name: titlegrad1;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+h2 {
+    font-size: 34px;
+    font-family: EnFont, ChFont;
+    text-align: center;
+}
+
+h3 {
+    font-size: 28px;
+    font-family: EnFont, ChFont;
+    text-align: left;
+}
+
+h4 {
+    font-size: 24px;
+    font-family: EnFont, ChFont;
+    text-align: left;
+}
+
+h5 {
+    font-size: 21px;
+    font-family: EnFont, ChFont;
+    text-align: left;
+}
+
+h6 {
+    font-size: 18px;
+    font-family: EnFont, ChFont;
+    text-align: left;
+}
+
+body {
+    font-size: 15px;
+    font-family: EnFont, ChFont
+}
+
+p {
+    font-size: 15px;
+    font-family: EnFont, ChFont
+}
+
+div {
+    font-size: 15px;
+    font-family: EnFont, ChFont
+}
+
+.studioname {
+    font-family: EnFont, ChFont;
+    text-align: center;
+}
+
+.news {
+    font-family: EnFont, ChFont;
+    text-align: center;
+}
+
+.discryption {
+    font-family: EnFont, ChFont;
+    text-align: center;
+}
+
+blockquote {
+    width: 384px;
+    margin: 0 auto;
+    /*margin-left: 32px;*/
+    border-left-width: 6px;
+    border-left-color: #e0e0e080;
+    border-left-style: solid;
+    border-right-width: 6px;
+    border-right-color: #e0e0e080;
+    border-right-style: solid;
+    /*text-align: left;*/
+}
+
+a {
+    color: #f00;
+    font-style: normal;
+}
+
+a:visited {
+    color: #c00;
+}
+
+a:hover {
+    color: #f66;
+}
+
+.strong {
+    color: #000000;
+    font-size: 120%;
+    text-shadow: 2px 2px 2px #FF000080;
+    animation-name: titlegrad1;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+.big-strong {
+    color: #000000;
+    font-size: 180%;
+    text-shadow: 2px 2px 2px #FF000080;
+    animation-name: titlegrad1;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+body {
+    transform: rotate(360deg);
+    /*
+    animation-name: backgrad1;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction:normal;*/
+    background-position: center 0;
+    background-repeat: repeat;
+    /*background-attachment: fixed;*/
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: linear-gradient(45deg, #cc00ff99 0%, #3333ff99 50%, #00ccff99 100%);
+    /*transform:translateX(100%);*/
+}
+
+/*
+@keyframes backgroundgrad1{
+    0% {background-image: linear-gradient(120deg, #cc00ff99 0%, #3333ff99 50%, #00ccff99 100%);}
+    50% {background-image: linear-gradient(300deg, #cc00ff99 0%, #3333ff99 50%, #00ccff99 100%);}
+    100% {background-image: linear-gradient(120deg, #cc00ff99 0%, #3333ff99 50%, #00ccff99 100%);}
+}
+*/
+
+@keyframes titlegrad1 {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+/*
+@keyframes backgrad1 {
+    0% {
+        background-position-x: 0px;
+    }
+
+    100% {
+        background-position-x: calc(100%);
+    }
+}*/
+
+.redBadge {
+    display: inline-block;
+    border-width: 2px 6px;
+    border-color: #c0000080 #c00000c0;
+    border-style: solid;
+    border-radius: 4px 8px;
+    width: 32px;
+    text-align: center middle;
+    background-color: #ff0000c0;
+    padding: 2px;
+    margin: 6px;
+}
+
+.greenBadge {
+    display: inline-block;
+    border-width: 2px 6px;
+    border-color: #00c02080 #00c020c0;
+    border-style: solid;
+    border-radius: 4px 8px;
+    width: 32px;
+    text-align: center middle;
+    background-color: #20ff40ff;
+    padding: 2px;
+    margin: 6px;
+}
+
+.blueBadge {
+    display: inline-block;
+    border-width: 2px 6px;
+    border-color: #00c0ff80 #00c0ffc0;
+    border-style: solid;
+    border-radius: 4px 8px;
+    width: 32px;
+    text-align: center middle;
+    background-color: #20ffffff;
+    padding: 2px;
+    margin: 6px;
+}
+
+.yellowBadge {
+    display: inline-block;
+    border-width: 2px 6px;
+    border-color: #ffff0080 #ffff00c0;
+    border-style: solid;
+    border-radius: 4px 8px;
+    width: 32px;
+    text-align: center middle;
+    background-color: #ffff20ff;
+    padding: 2px;
+    margin: 6px;
+}
+
+.grayBadge {
+    display: inline-block;
+    border-width: 2px 6px;
+    border-color: #80808080 #606060c0;
+    border-style: solid;
+    border-radius: 4px 8px;
+    width: 32px;
+    text-align: center middle;
+    background-color: #c0c0c0ff;
+    padding: 2px;
+    margin: 6px;
+}
+
+.button.download {
+    display: inline-block;
+    border-style: hidden;
+    border-radius: 12px 12px;
+    width: 175px;
+    font-size: 200%;
+    text-align: center middle;
+    text-decoration: none;
+    color: #000000;
+    background-image: linear-gradient(45deg, hsl(0, 100%, 50%) 0%, hsl(30, 100%, 50%) 100%);
+    padding: 2px;
+    margin: 6px;
+}
